@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  h2 {
+    font-weight: 500;
+    font-size: 140% !important;
+  }
+
+  a {
+    color: #fdb515 !important;
+  }
+
+  a:hover {
+    color: #ffed46;
+    text-decoration: none;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-banner {
+    background-color: #0d2d6c;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  .footer-banner {
+    background-color: #0d2d6c;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+  /* About Me Section */
+  .about-me {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  /* Project Grid and Item Styles */
+  .container {
+    padding: 2rem;
+  }
+
+  .portfolio-item {
+    margin-bottom: 1rem;
+  }
+
+  /* Project Image Styles */
+  .project-image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 270px;
+    /* Adjust the height as needed */
+    width: 270px;
+    /* Adjust the height as needed */
+    margin-bottom: 5px;
+  }
+
+  .project-image hover {
+    border: 2px solid #000;
+  }
+
+  /* Title overlay on the image */
+  .project-title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(13, 45, 108, 0.8);
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+
+  /* Project Caption */
+  .project-caption {
+    font-size: 0.8rem;
+    color: #555;
+    text-align: justify;
+  }
+
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header class="header-banner">
+    <h1>Chloe Edwards: Data Visualization & Mapping Portfolio</h1>
+  </header>
+
+  <!-- Main Content Section -->
+  <main class="container">
+    <div class="row">
+      <!-- Left Column: About Me Section -->
+      <div class="col-md-4">
+        <div class="about-me">
+          <h2>About the author</h2>
+          <p>Hello! I’m an environmental scientist with a passion for using data-driven approaches to solve
+            environmental challenges. I specialize in data visualization, geospatial analysis, and workflow automation,
+            with a strong background in both programming (Program R, Javascript) and digital mapping (ArcGIS, QGIS,
+            Leaflet).
+          </p>
+          <p>
+            Over the years, I’ve coordinated large-scale environmental programs, leveraging my skills in R, JavaScript,
+            and geospatial tools to enhance environmental monitoring efforts. I’m particularly skilled in transforming
+            complex datasets into actionable insights, whether through interactive web maps or automated
+            report-building.
+          </p>
+          <p>
+            Currently, I work as an Environmental Analyst at the Connecticut Department of Energy and Environmental
+            Protection, where I coordinate CT's three volunteer water monitoring programs: the Riffle Bioassessment by
+            Volunteers (RBV) program, the Volunteer Stream
+            Temperature Monitoring (VSTeM) Network, and Connecticut Lake Watch. My focus is on streamlining data QA,
+            management, analysis, visualization, and mapping processes to improve organizational efficiency and
+            communicate program results with a variety of stakeholders.
+          </p>
+          <p>
+            Please feel free to explore my portfolio to see some of my key projects and accomplishments!
+          </p>
+        </div>
+      </div>
+      <!-- Right Column: Projects -->
+      <div class="col-md-8">
+        <div class="row">
+          <!-- Example of a project div -->
+          <div class="col-md-4 portfolio-item">
+            <a href="https://c-edwards-eco.github.io/Volmon-Map-App/">
+              <div class="project">
+                <div class="project-image" style="background-image: url('/images/volmonmapapp.PNG');">
+                  <h2 class="project-title">Volmon Map App</h2>
+                </div>
+            </a>
+            <p class="project-caption">This mapping application visualizes and explores data from Connecitut's three
+              volunteer water monitoring programs.</p>
+          </div>
+        </div>
+        <div class="col-md-4 portfolio-item">
+          <a href="https://ctdeepwatermonitoring.github.io/lakeprofileReports/">
+            <div class="project">
+              <div class="project-image" style="background-image: url('/images/lakeprofile.PNG');">
+                <h2 class="project-title">Lake Profile Reports</h2>
+              </div>
+          </a>
+          <p class="project-caption">This is an example report generated from an R script that automates the creation of
+            these reports for all 80 lakes with vertical profile data.</p>
+        </div>
+      </div>
+      <div class="col-md-4 portfolio-item">
+        <a href="https://ctdeepwatermonitoring.github.io/RBVReport/">
+          <div class="project">
+            <div class="project-image" style="background-image: url('/images/rbvreport.PNG');">
+              <h2 class="project-title">RBV Program Report</h2>
+            </div>
+        </a>
+        <p class="project-caption">This is the 2023 RBV program report that includes many interactive functionalities
+          for exploring program data.</p>
+      </div>
+    </div>
+    <div class="col-md-4 portfolio-item">
+      <a href="https://ctdeepwatermonitoring.github.io/ctlakewatch/">
+        <div class="project">
+          <div class="project-image" style="background-image: url('/images/ctlw.PNG');">
+            <h2 class="project-title">CT Lake Watch Reports</h2>
+          </div>
+      </a>
+      <p class="project-caption">This is an example report generated from an R script that automates the creation of
+        these reports for all 20 lakes participating in CT Lake Watch.</p>
+    </div>
+    </div>
+    <div class="col-md-4 portfolio-item">
+      <a href="https://c-edwards-eco.github.io/CT-IC-mapping/">
+        <div class="project">
+          <div class="project-image" style="background-image: url('/images/cticmap.PNG');">
+            <h2 class="project-title">Impervious Cover Map</h2>
+          </div>
+      </a>
+      <p class="project-caption">This map was built from analysis looking at areas in Connecticut vulnerable to water
+        quality concerns, based on impervious cover and canopy coverage.</p>
+    </div>
+    </div>
+    <!-- Add more projects as needed -->
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer-banner">
+   <b> Last updated: October 2024 | <a href = "https://github.com/c-edwards-eco">Github</a> | <a href = "https://www.linkedin.com/in/chloe-edwards-b74966160/">Linkedin</a></b>
+  </footer>
+
+</body>
+
+</html>
