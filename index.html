@@ -65,10 +65,10 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 270px;
     width: 100%;
+    height: 250px;
     margin-bottom: 5px;
-    min-height: 150px; 
+    transition: height 0.3s ease;
   }
 
   .project-image:hover {
@@ -83,6 +83,7 @@
     background-color: rgba(13, 45, 108, 0.8);
     padding: 5px 10px;
     border-radius: 4px;
+    margin: 5px;
   }
 
   .project-caption {
@@ -91,6 +92,17 @@
     text-align: justify;
   }
 
+  @media (max-width: 1200px) {
+    .project-image {
+      height: 220px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .project-image {
+      height: 200px;
+    }
+  }
 
   @media (max-width: 768px) {
     .col-md-4 {
@@ -98,7 +110,7 @@
       max-width: 100%;
     }
     .project-image {
-      height: auto; 
+      height: 180px;
     }
   }
 
@@ -108,9 +120,10 @@
       max-width: 100%;
     }
     .project-image {
-      width: auto; 
+      height: 150px;
     }
   }
+
 </style>
 
 <head>
@@ -138,15 +151,16 @@
           <p><img src="images/bio_photo.jpeg" class="bio-photo"> I’m an environmental scientist with a passion for using
             programmatic approaches to solve
             environmental data challenges. <strong>I specialize in data visualization, geospatial analysis, and workflow
-            automation</strong>,
+              automation</strong>,
             with a strong background in both programming (Program R, Javascript) and digital mapping (ArcGIS, QGIS,
             Leaflet).
           </p>
           <p>
             Over the years, I’ve coordinated large-scale environmental programs, leveraging my skills in R, JavaScript,
-            and geospatial tools to enhance environmental monitoring efforts. <strong>I’m particularly skilled in transforming
-            complex datasets into actionable insights, whether through interactive web maps or automated
-            report-building.</strong>
+            and geospatial tools to enhance environmental monitoring efforts. <strong>I’m particularly skilled in
+              transforming
+              complex datasets into actionable insights, whether through interactive web maps or automated
+              report-building.</strong>
           </p>
           <p>
             Currently, I work as an Environmental Analyst at the Connecticut Department of Energy and Environmental
@@ -156,7 +170,8 @@
             communicate program results with a variety of stakeholders.
           </p>
           <p>
-            <strong> Please feel free to explore my portfolio to see some of my key projects and accomplishments!</strong>
+            <strong> Please feel free to explore my portfolio to see some of my key projects and
+              accomplishments!</strong>
           </p>
         </div>
       </div>
