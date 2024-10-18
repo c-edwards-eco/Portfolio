@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <style>
   h2 {
     font-weight: 500;
@@ -43,7 +44,6 @@
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 2rem;
-    text-align: justify;
   }
 
   .bio-photo {
@@ -68,7 +68,8 @@
     height: 270px;
     width: 100%;
     margin-bottom: 5px;
-  }
+    min-height: 200px; /* Ensures some height on small screens */
+}
 
   .project-image:hover {
     border: 3px solid #5D5D5D;
@@ -90,13 +91,24 @@
     text-align: justify;
   }
 
+  /* Responsive layout changes */
   @media (max-width: 768px) {
-    .project-image {
-      height: auto;
+    .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
+    .project-image {
+      height: auto; /* Allow image height to adjust */
+    }
+  }
 
-    .about-me {
-      margin-bottom: 1rem;
+  @media (max-width: 576px) {
+    .col-md-4 {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+    .project-image {
+      height: auto; /* Make image adjust dynamically */
     }
   }
 </style>
@@ -125,16 +137,16 @@
           <h2>About the author</h2>
           <p><img src="images/bio_photo.jpeg" class="bio-photo"> I’m an environmental scientist with a passion for using
             programmatic approaches to solve
-            environmental data challenges. I specialize in data visualization, geospatial analysis, and workflow
+            environmental data challenges. <strong>I specialize in data visualization, geospatial analysis, and workflow
             automation,
             with a strong background in both programming (Program R, Javascript) and digital mapping (ArcGIS, QGIS,
-            Leaflet).
+            Leaflet).</strong>
           </p>
           <p>
             Over the years, I’ve coordinated large-scale environmental programs, leveraging my skills in R, JavaScript,
-            and geospatial tools to enhance environmental monitoring efforts. I’m particularly skilled in transforming
+            and geospatial tools to enhance environmental monitoring efforts. <strong>I’m particularly skilled in transforming
             complex datasets into actionable insights, whether through interactive web maps or automated
-            report-building.
+            report-building.</strong>
           </p>
           <p>
             Currently, I work as an Environmental Analyst at the Connecticut Department of Energy and Environmental
@@ -144,14 +156,14 @@
             communicate program results with a variety of stakeholders.
           </p>
           <p>
-            Please feel free to explore my portfolio to see some of my key projects and accomplishments!
+            <strong> Please feel free to explore my portfolio to see some of my key projects and accomplishments!</strong>
           </p>
         </div>
       </div>
       <!-- Right Column: Projects -->
       <div class="col-md-8">
         <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+          <div class="col-md-4 portfolio-item">
             <a target="_blank" href="https://c-edwards-eco.github.io/Volmon-Map-App/">
               <div class="project">
                 <div class="project-image" style="background-image: url('images/volmonmapapp.PNG');">
@@ -162,7 +174,7 @@
               volunteer water monitoring programs.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+        <div class="col-md-4 portfolio-item">
           <a target="_blank" href="https://ctdeepwatermonitoring.github.io/lakeprofileReports/">
             <div class="project">
               <div class="project-image" style="background-image: url('images/lakeprofile.PNG');">
@@ -173,7 +185,7 @@
             for all 80 lakes with vertical profile data.</p>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+      <div class="col-md-4 portfolio-item">
         <a target="_blank" href="https://ctdeepwatermonitoring.github.io/RBVReport/">
           <div class="project">
             <div class="project-image" style="background-image: url('images/rbvreport.PNG');">
@@ -184,7 +196,7 @@
           for exploring program data.</p>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+    <div class="col-md-4 portfolio-item">
       <a target="_blank" href="https://ctdeepwatermonitoring.github.io/ctlakewatch/">
         <div class="project">
           <div class="project-image" style="background-image: url('images/ctlw.PNG');">
@@ -195,7 +207,7 @@
         all 20 lakes participating in CT Lake Watch.</p>
     </div>
     </div>
-    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+    <div class="col-md-4 portfolio-item">
       <a target="_blank" href="https://c-edwards-eco.github.io/CT-IC-mapping/">
         <div class="project">
           <div class="project-image" style="background-image: url('images/cticmap.PNG');">
