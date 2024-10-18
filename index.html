@@ -66,7 +66,7 @@
     background-position: center;
     position: relative;
     height: 270px;
-    width: 270px;
+    width: 100%;
     margin-bottom: 5px;
   }
 
@@ -90,12 +90,13 @@
     text-align: justify;
   }
 
-
-
   @media (max-width: 768px) {
-    .col-md-4 {
-      flex: 0 0 100%;
-      max-width: 100%;
+    .project-image {
+      height: auto;
+    }
+
+    .about-me {
+      margin-bottom: 1rem;
     }
   }
 </style>
@@ -150,7 +151,7 @@
       <!-- Right Column: Projects -->
       <div class="col-md-8">
         <div class="row">
-          <div class="col-md-4 portfolio-item">
+          <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
             <a href="https://c-edwards-eco.github.io/Volmon-Map-App/">
               <div class="project">
                 <div class="project-image" style="background-image: url('images/volmonmapapp.PNG');">
@@ -161,7 +162,7 @@
               volunteer water monitoring programs.</p>
           </div>
         </div>
-        <div class="col-md-4 portfolio-item">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
           <a href="https://ctdeepwatermonitoring.github.io/lakeprofileReports/">
             <div class="project">
               <div class="project-image" style="background-image: url('images/lakeprofile.PNG');">
@@ -172,7 +173,7 @@
             for all 80 lakes with vertical profile data.</p>
         </div>
       </div>
-      <div class="col-md-4 portfolio-item">
+      <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
         <a href="https://ctdeepwatermonitoring.github.io/RBVReport/">
           <div class="project">
             <div class="project-image" style="background-image: url('images/rbvreport.PNG');">
@@ -183,7 +184,7 @@
           for exploring program data.</p>
       </div>
     </div>
-    <div class="col-md-4 portfolio-item">
+    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
       <a href="https://ctdeepwatermonitoring.github.io/ctlakewatch/">
         <div class="project">
           <div class="project-image" style="background-image: url('images/ctlw.PNG');">
@@ -194,7 +195,7 @@
         all 20 lakes participating in CT Lake Watch.</p>
     </div>
     </div>
-    <div class="col-md-4 portfolio-item">
+    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
       <a href="https://c-edwards-eco.github.io/CT-IC-mapping/">
         <div class="project">
           <div class="project-image" style="background-image: url('images/cticmap.PNG');">
